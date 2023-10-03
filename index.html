@@ -9,32 +9,95 @@
 </head>
 
 <body>
-    <section class="barra">
-        <img src="assets/img/xandevs_x.png" class="logo" alt="logo">
+    <!--flecha para dirigir a las secciones-->
+    <div class="arrow-b">
+        <a href="#">
+            <img src="assets/svg/svg-down.svg" alt="down">
+        </a>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/img/xandevs_x.png" class="img-logo" alt="logo">
+        </div>
         <div class="menu">
             <ul>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Habilidades</a></li>
+                <li><a href="#about">Sobre mi</a></li>
                 <li><a href="#">Experiencia</a></li>
                 <li><a href="#">Proyectos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </div>
-        <div class="social"></div>
-    </section>
-    <section class="content">
-        <div class="main-content">
+        <div class="social">
+            <span class="social-i">
+                <a href="#">
+                    <img src="assets/svg/svg-linkedin.svg" alt="linkedin">
+                </a>
+            </span>
+
+            <span class="social-i">
+                <a href="#">
+                    <img src="assets/svg/svg-github.svg" alt="github">
+                </a>
+            </span>
+
+            <span class="social-i">
+                <a href="#">
+                    <img src="assets/svg/svg-facebook.svg" alt="svg-facebook">
+                </a>
+            </span>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="main-content" id="about">
             <div class="text-content">
-                <p class="presenta">Hola Soy</p>
+                <p class="presenta">Hola, soy</p>
                 <h1>Fernando Joaquin</h1>
                 <p class="puesto">Desarrollador full stack</p>
                 <a href="#" class="btn-1">Contactame</a>
             </div>
-            <div class="img-content">
-                <img src="assets/img/xandevs_x.png" alt="logo" class="main-img">
+            <div class="about-me">
+                <h2 class="text-about">Sobre mi</h2>
+                <p>Soy ingeniero en sistemas computacionales, autodidacta y apasionado del desarrollo web,
+                    con experiencia la creación de sistemas para empresas de la región. En aprendizaje 
+                    constante para seguir creciendo.
+                </p>
+                <h2 class="text-about">
+                    Lenguajes de programacion y tecnologias 
+                </h2>
+                <div class="dev-lang">
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-html.svg" alt="html">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-css.svg" alt="css">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-sass.svg" alt="sass">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-javascript.svg" alt="javascript">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-php.svg" alt="php">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-java.svg" alt="java">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-mysql.svg" alt="mysql">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-wordpress.svg" alt="wordpress">
+                    </span>
+                </div>
+
             </div>
         </div>
+
     </section>
+
+
 </body>
 
 </html>
