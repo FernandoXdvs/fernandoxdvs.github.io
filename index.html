@@ -4,37 +4,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernando Jp</title>
+    <title>Portfolio - Fernando Joaquin</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/img/xandevs_x.png" type="image/x-icon">
 </head>
 
 <body>
-    <section class="barra">
-        <img src="assets/img/xandevs_x.png" class="logo" alt="logo">
+    <!--flecha para dirigir a las secciones
+    <div class="arrow-b">
+        <a href="#">
+            <img src="assets/svg/svg-down.svg" alt="down">
+        </a>
+    </div>
+    -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/img/xandevs_x.png" class="img-logo" alt="logo">
+        </div>
         <div class="menu">
             <ul>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
-        <div class="social"></div>
-    </section>
-    <section class="content">
-        <div class="main-content">
+        <div class="social">
+            <span class="social-i">
+                <a href="https://www.linkedin.com/in/fernando-joaquin-pereyda-555856294/">
+                    <img src="assets/svg/svg-linkedin.svg" alt="linkedin">
+                </a>
+            </span>
+
+            <span class="social-i">
+                <a href="https://github.com/FernandoXdvs">
+                    <img src="assets/svg/svg-github.svg" alt="github">
+                </a>
+            </span>
+
+            <span class="social-i">
+                <a href="#">
+                    <img src="assets/svg/svg-facebook.svg" alt="svg-facebook">
+                </a>
+            </span>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="main-content" id="about">
             <div class="text-content">
-                <p class="presenta">Hola Soy</p>
+                <p class="presenta">Hola, soy</p>
                 <h1>Fernando Joaquin</h1>
                 <p class="puesto">Desarrollador Jr</p>
                 <a href="#" class="btn-1">Contactame</a>
             </div>
-            <div class="img-content">
-                <img src="assets/img/xandevs_x.png" alt="logo" class="main-img">
+            <div class="about-me">
+                <h2 class="text-about">Sobre mi</h2>
+                <p>Ingeniero en sistemas computacionales, autodidacta y apasionado del desarrollo web,
+                    con experiencia en la creación de sistemas para empresas de la región. En aprendizaje
+                    constante para seguir mejorando mis habilidades.
+                </p>
+                <h2 class="text-about">Experiencia</h2>
+                <p>
+                    He laborado en diferentes áreas dentro de las TI, desarrollando de software de
+                    escritorio y paginas web, de manera autonoma, como freelancer.
+                    Dentro de mi experiencia laboral tambien cuento con experiencia en áreas administrativas, atencíon a
+                    clientes, soporte técnico, captura de información entre otras.
+                </p>
+                <h2 class="text-about">
+                    Lenguajes de programacion y tecnologias
+                </h2>
+                <div class="dev-lang">
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-html.svg" alt="html">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-css.svg" alt="css">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-sass.svg" alt="sass">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-javascript.svg" alt="javascript">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-php.svg" alt="php">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-java.svg" alt="java">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-mysql.svg" alt="mysql">
+                    </span>
+                    <span class="dev-i">
+                        <img src="assets/svg/svg-wordpress.svg" alt="wordpress">
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--Proyectos-->
+    <section class="projects" id="projects">
+        <h3>Proyectos</h3>
+        <div class="container project-content">
+            <div class="project-i">
+                <div class="content-i image-i">
+                    <img src="assets/img/sispven.png" alt="sispven">
+                </div>
+                <div class="content-i text-i">
+                    <h4>Punto de venta Sispven</h4>
+                    <p>Desarrollado para la empresa de alimentos y papeleria "Papeleria el Jhonny"
+                        un sistema basado en el control del inventario.
+                    </p>
+                    <span>
+                        <img src="assets/svg/svg-java.svg" alt="java">
+                        <img src="assets/svg/svg-mysql.svg" alt="mysql">
+                    </span>
+                </div>
+            </div>
+
+            <div class="project-i">
+                <div class="content-i image-i">
+                   <a href="https://www.fotofinishharocorp.com/"> <img src="assets/img/fotofinish.PNG" alt="wordpress"></a>
+                </div>
+                <div class="content-i text-i">
+                    <h4>Desarrollo de modulo para membresias</h4>
+                    <p>Instalación y configuración de plugins, de un modulo exclusivo
+                        para usuarios con una membresia de pago, para la empresa foto finish haro.
+                    </p>
+                    <span>
+                        <img src="assets/svg/svg-wordpress.svg" alt="wordpress">
+                    </span>
+                </div>
+            </div>
+
+            <div class="project-i">
+                <div class="content-i image-i">
+                   <a href="https://fernandoxdvs.github.io/"> <img src="assets/img/portfolio.PNG"></a>
+                </div>
+                <div class="content-i text-i">
+                    <h4>Portfolio</h4>
+                    <p>Portfolio personal
+                    </p>
+                    <span>
+                        <img src="assets/svg/svg-html.svg" alt="wordpress">
+                        <img src="assets/svg/svg-css.svg" alt="css">
+                        <img src="assets/svg/svg-javascript.svg" alt="javascript">
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Contacto-->
+    <section class="contact">
+        <h3>Contactame</h3>
+        <div class="container content-form">
+            <div class="contact-img">
+                <img src="assets/svg/svg-contact.svg" alt="contacto">
+            </div>
+            <div class="contact-form">
+                <form class="form-1">
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" name="correo" id="correo" placeholder="tucorreo@mail.com">
+                    <label for="asunto">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    <a href="#" class="btn-2">Enviar</a>
+                </form>
             </div>
         </div>
     </section>
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <p>Derechos reservados &copy; Fernando Jp </p>
+        </div>
+    </div>
 </body>
 
 </html>
