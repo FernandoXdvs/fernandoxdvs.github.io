@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;700&display=swap');
+
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(36, 28, 1, 0.775),rgba(137, 96, 21, 0.57)), url("../assets/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-top: 3rem;
+}
+
+
+.form-login, .form-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    text-align: left;
+    width: 100%;
+}
+
+.form-login form{
+    width: 70%;
+}
+
+.form-login form>a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+.form-register{
+    border-left: solid 2px #fff;
+    padding-left:20px ;
+}
+
+.form-register form{
+    width: 70%;
+}
