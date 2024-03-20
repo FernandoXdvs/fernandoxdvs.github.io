@@ -137,7 +137,6 @@ body {
     text-decoration: none;
     color: #fff;
     display: block;
-    animation: arrowDown 1s alternate-reverse infinite;
 
 }
 
@@ -271,7 +270,8 @@ body {
     padding-bottom: 2rem;
 }
 
-.contact-content span> img, .contact-content span> h4{ 
+.contact-content span>img,
+.contact-content span>h4 {
     display: inline;
     width: 20px;
 }
@@ -298,6 +298,204 @@ body {
 
 @keyframes arrowDown {
     100% {
-        color: #ff0033;
+        font-weight: bold;
     }
+}
+
+/*MEDIASCREEN*/
+
+@media screen and (max-width:800px) {
+
+    /*SOBRE MI*/
+    .aboutme-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-aboutme,
+    .img-profile {
+        width: 80%;
+        margin: auto;
+    }
+
+    .img-profile img {
+        width: 50%;
+    }
+
+    /*TERMINA SOBRE MI*/
+
+    /*PROYECTOS*/
+
+    .projects,
+    .my-designs {
+        background-color: #08071d;
+        font-weight: 200;
+        padding: 1rem 2rem 2rem 2rem;
+    }
+
+
+    .project-content,
+    .my-designs-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    /*TERMINA PROYECTOS*/
+}
+
+@media screen and (max-width:500px) {
+
+    /*Principal*/
+
+    .container{
+        width: 90%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .social {
+        border: none;
+
+    }
+
+    /*Proyectos*/
+
+    .projects,
+    .my-designs {
+        background-color: #08071d;
+        font-weight: 200;
+        padding: .5rem 1rem 1rem 1rem;
+    }
+
+    .project-content,
+    .my-designs-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    .project-item img,
+    .design-items img {
+        width: 100%;
+        height: 12rem;
+    }
+
+    /*Contacto*/
+
+    .contact h3 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .contact-content {
+        color: #1b1b1b;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+}
+
+
+@media screen and (max-width:300px) {
+
+    /*PRINCIPAL*/
+    .full-container {
+        height: 90vh;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .social {
+        border: none;
+
+    }
+
+    .main-container {
+        height: 75vh;
+    }
+
+    .main-container h1 {
+        font-size: 2rem;
+    }
+
+    .main-container h1>span {
+        padding: 0 .5rem;
+    }
+
+    .main-container h2 {
+        font-size: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-container p {
+        font-size: .8rem;
+    }
+
+    .languajes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .arrow-down {
+        display: none;
+    }
+
+    /*PRYECTOS*/
+
+    .projects,
+    .my-designs {
+        background-color: #08071d;
+        font-weight: 200;
+        padding: .5rem 1rem 1rem 1rem;
+    }
+
+    .project-content,
+    .my-designs-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    .project-item img,
+    .design-items img {
+        width: 100%;
+        height: 8rem;
+    }
+
+    /*Contacto*/
+
+    .contact h3 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .contact-content {
+        color: #1b1b1b;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+
 }
